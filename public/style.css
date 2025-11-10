@@ -138,52 +138,147 @@ button:hover {
 
 /* ===== MOBILE RESPONSIVE (Android / petits écrans) ===== */
 /* ===== MOBILE RESPONSIVE (Android / petits écrans) ===== */
+/* ===== MOBILE FULLSCREEN (Android) ===== */
 @media (max-width: 600px) {
   body {
     justify-content: flex-start;
-    padding-top: 5vh;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
 
   .login-container {
-    width: 98%;             /* presque tout l'écran */
-    height: 90vh;           /* hauteur très grande */
-    padding: 30px;          /* plus d'espace interne */
-    border-radius: 15px;
+    width: 100%;           /* pleine largeur */
+    height: 100%;          /* pleine hauteur */
+    padding: 40px;         /* espace intérieur confortable */
+    border-radius: 0;      /* coins carrés pour fullscreen */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: none;
   }
 
   h2 {
-    font-size: 3rem;        /* titre très grand */
+    font-size: 3rem;       /* très grand titre */
     margin-bottom: 40px;
     text-align: center;
   }
 
   .input-box {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .input-box label {
-    font-size: 1.5rem;      /* labels bien lisibles */
+    font-size: 1.6rem;     /* label très visible */
     margin-bottom: 12px;
   }
 
   .input-box input,
   .input-box select {
-    font-size: 1.6rem;      /* champs très grands */
-    padding: 22px 16px;
-    border-radius: 12px;
+    font-size: 1.8rem;     /* champ énorme */
+    padding: 24px 18px;
+    border-radius: 10px;
   }
 
   button {
-    font-size: 1.8rem;      /* bouton énorme */
-    padding: 24px 0;
-    border-radius: 12px;
+    font-size: 2rem;       /* bouton très grand */
+    padding: 28px 0;
+    border-radius: 10px;
   }
 
   #message {
-    font-size: 1.4rem;
-    margin-top: 25px;
+    font-size: 1.6rem;
+    margin-top: 30px;
+  }
+
+  #loader {
+    display: flex;         /* loader visible sur mobile */
+  }
+
+  .spinner {
+    width: 80px;
+    height: 80px;
+    border-width: 8px;
+  }
+}
+/* ===== MOBILE / PETITS ÉCRANS FULLSCREEN (jusqu'à 700px) ===== */
+@media (max-width: 700px) {
+  body {
+    justify-content: flex-start;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .login-container {
+    width: 100%;          /* pleine largeur */
+    height: 100%;         /* pleine hauteur */
+    padding: 40px;        /* espace intérieur confortable */
+    border-radius: 0;     /* coins carrés pour fullscreen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: none;
+  }
+
+  h2 {
+    font-size: 3rem;      /* très grand titre */
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .input-box {
+    margin-bottom: 30px;
+  }
+
+  .input-box label {
+    font-size: 1.6rem;    /* label très visible */
+    margin-bottom: 12px;
+  }
+
+  .input-box input,
+  .input-box select {
+    font-size: 1.8rem;    /* champ énorme */
+    padding: 24px 18px;
+    border-radius: 10px;
+  }
+
+  button {
+    font-size: 2rem;      /* bouton très grand */
+    padding: 28px 0;
+    border-radius: 10px;
+  }
+
+  #message {
+    font-size: 1.6rem;
+    margin-top: 30px;
+  }
+
+  #loader {
+    display: flex;        /* loader visible sur mobile */
+  }
+
+  .spinner {
+    width: 80px;
+    height: 80px;
+    border-width: 8px;
   }
 }
