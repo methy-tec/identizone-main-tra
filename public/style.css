@@ -139,16 +139,35 @@ button:hover {
 /* ===== MOBILE RESPONSIVE (Android / petits écrans) ===== */
 @media (max-width: 600px) {
   .login-container {
-    width: 95%;
-    padding: 35px 25px;
+    width: 98%;        /* occupe presque tout l'écran */
+    padding: 40px 30px; /* plus d'espace pour les champs */
+    border-radius: 15px;
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem; /* titre plus grand */
+    margin-bottom: 35px;
   }
 
-  input, select, button {
+  .input-box label {
+    font-size: 1.3rem; /* labels plus visibles */
+    margin-bottom: 12px;
+  }
+
+  .input-box input,
+  .input-box select {
+    font-size: 1.3rem;   /* champs plus grands */
+    padding: 20px 15px;
+  }
+
+  button {
+    font-size: 1.4rem;   /* bouton plus visible */
+    padding: 20px 0;
+  }
+
+  #message {
     font-size: 1.2rem;
-    padding: 18px 15px;
+    margin-top: 25px;
   }
 }
+
