@@ -137,37 +137,53 @@ button:hover {
 }
 
 /* ===== MOBILE RESPONSIVE (Android / petits écrans) ===== */
+/* ===== MOBILE RESPONSIVE (Android / petits écrans) ===== */
 @media (max-width: 600px) {
+  body {
+    justify-content: flex-start;
+    padding-top: 5vh;
+  }
+
   .login-container {
-    width: 98%;        /* occupe presque tout l'écran */
-    padding: 40px 30px; /* plus d'espace pour les champs */
+    width: 98%;             /* presque tout l'écran */
+    height: 90vh;           /* hauteur très grande */
+    padding: 30px;          /* plus d'espace interne */
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   h2 {
-    font-size: 2.4rem; /* titre plus grand */
-    margin-bottom: 35px;
+    font-size: 3rem;        /* titre très grand */
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .input-box {
+    margin-bottom: 25px;
   }
 
   .input-box label {
-    font-size: 1.3rem; /* labels plus visibles */
+    font-size: 1.5rem;      /* labels bien lisibles */
     margin-bottom: 12px;
   }
 
   .input-box input,
   .input-box select {
-    font-size: 1.3rem;   /* champs plus grands */
-    padding: 20px 15px;
+    font-size: 1.6rem;      /* champs très grands */
+    padding: 22px 16px;
+    border-radius: 12px;
   }
 
   button {
-    font-size: 1.4rem;   /* bouton plus visible */
-    padding: 20px 0;
+    font-size: 1.8rem;      /* bouton énorme */
+    padding: 24px 0;
+    border-radius: 12px;
   }
 
   #message {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 25px;
   }
 }
-
