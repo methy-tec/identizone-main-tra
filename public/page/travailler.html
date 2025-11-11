@@ -1,10 +1,47 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Travailler</title>
+  <link rel="stylesheet" href="travailler.css">
 </head>
 <body>
-    
+  <div class="dashboard-container">
+
+    <!-- HEADER -->
+    <header>
+      <h1>Bonjour, <span id="userName">Travailler</span></h1>
+    </header>
+
+    <!-- NAVIGATION (verticale) -->
+    <nav class="dashboard-nav">
+      <button class="nav-btn" onclick="openSection('familles')">Familles</button>
+      <button class="nav-btn" onclick="openSection('habitats')">Habitats</button>
+      <button class="nav-btn" onclick="openSection('parametres')">Paramètres</button>
+      <button class="nav-btn logout" onclick="logout()">Déconnexion</button>
+    </nav>
+
+    <!-- SECTIONS -->
+    <main class="dashboard-content">
+      <section id="familles" class="dashboard-section active">
+        <h2>Familles</h2>
+        <div id="familleList"></div>
+      </section>
+
+      <section id="habitats" class="dashboard-section">
+        <h2>Habitats</h2>
+        <div id="habitatList"></div>
+      </section>
+
+      <section id="parametres" class="dashboard-section">
+        <h2>Paramètres</h2>
+        <p>Changer mot de passe / profil / notifications</p>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="travailler.js"></script>
 </body>
 </html>
