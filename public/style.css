@@ -57,7 +57,8 @@ body {
   padding: 40px 30px;
   border-radius: 20px;
   width: 90%;
-  max-width: 450px;
+  max-width: 400px;
+  min-width: 300px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   animation: fadeIn 0.6s ease;
 }
@@ -141,7 +142,7 @@ button:hover {
 /* ===== MOBILE FULLSCREEN (Android) ===== */
 
 /* ===== FULLSCREEN POUR ÉCRANS ENTRE 700px ET 800px ===== */
-@media (max-width: 800px) {
+@media (max-width: 720px) {
   body {
     margin: 0;
     padding: 0;
@@ -163,9 +164,9 @@ button:hover {
   }
 
   .login-container {
-    width: 100%;           /* plein écran largeur */
+    width: 950%;           /* plein écran largeur */
     height: 100%;          /* plein écran hauteur */
-    padding: 50px 40px;    /* espacement confortable */
+    padding: 25px;    /* espacement confortable */
     border-radius: 0;      /* coins carrés */
     display: flex;
     flex-direction: column;
